@@ -72,11 +72,25 @@ data:() => ({
 #sitemap {
   background-image: url(../../assets/img/footer-bg.jpg);
   height: 400px;
-  padding: 20px 0;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  .container {
+    background-image: url(../../assets/img/dc-logo-bg.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
   h2 {
   color: white;
   font-variant: small-caps;
   padding: 10px 0;
+  margin-top: 20px;
+  }
+  ul {
+    flex:auto;
   }
   a {
     font-size: small;
