@@ -23,14 +23,8 @@ export default {
 
 <style lang="scss">
 
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Greta Sans Condensed Bold","Greta Sans Bold",Arial,sans-serif;
-}
-ul li a{
-  list-style: none;
-  text-decoration: none;
-}
+@import './assets/style/general';
+@import './assets/style/utilis';
+@import './assets/style/vars';
+
 </style>
