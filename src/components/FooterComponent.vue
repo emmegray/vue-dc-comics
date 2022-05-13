@@ -2,22 +2,27 @@
   <footer>
     <Shop></Shop>
     <Sitemap></Sitemap>
-    <div id="socials">
-      <div class="container"></div>
-    </div>
+    <Socials></Socials>
   </footer>
 </template>
 
 <script>
 import Shop from "./Footer/Shop.vue";
 import Sitemap from "./Footer/Sitemap.vue";
+import Socials from "./Footer/Socials.vue";
 export default {
   name: `FooterComponent`,
-  components: { Shop, Sitemap }
+  components: { Shop, Sitemap, Socials }
 }
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/style/vars"
+@import "../assets/style/vars";
 
+footer {
+  position: relative;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
 </style>

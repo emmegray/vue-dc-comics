@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <HeaderComponent></HeaderComponent>
-    <MainComponent>Content goes here</MainComponent>
+    <MainComponent></MainComponent>
     <FooterComponent></FooterComponent>
   </div>
 </template>
@@ -17,7 +17,7 @@ export default {
     HeaderComponent,
     MainComponent,
     FooterComponent,
-  }
+}
 }
 </script>
 

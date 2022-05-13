@@ -19,7 +19,9 @@
           <a :href="sites.url">{{sites.label}}</a>
         </li>
       </ul>
-      <!-- <img src="../../assets/img/dc-logo-bg.png"/> -->
+      <span>All Site Content TM and © 2020 DC Entertainment, unless otherwise noted here. All rights reserved.Cookies Settings
+        
+      </span>
     </div>
   </div>
 </template>
@@ -71,12 +73,11 @@ data:() => ({
 
 #sitemap {
   background-image: url(../../assets/img/footer-bg.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 400px;
   display: flex;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
   .container {
     background-image: url(../../assets/img/dc-logo-bg.png);
     background-position: right center;
@@ -90,7 +91,7 @@ data:() => ({
   margin-top: 20px;
   }
   ul {
-    flex:auto;
+    padding-right: 30px;
   }
   a {
     font-size: small;
