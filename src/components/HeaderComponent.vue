@@ -52,7 +52,6 @@ header {
   }
 
   .logo {
-    left: 15px;
     line-height: 115px;
     position: relative;
     width: 81px;

@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <header-component></header-component>
-    <main-component></main-component>
-    <footer-component></footer-component>
+    <HeaderComponent></HeaderComponent>
+    <MainComponent>Content goes here</MainComponent>
+    <FooterComponent></FooterComponent>
   </div>
 </template>
 
@@ -25,6 +25,5 @@ export default {
 
 @import './assets/style/general';
 @import './assets/style/utilis';
-@import './assets/style/vars';
 
 </style>
