@@ -1,9 +1,7 @@
 <template>
   <footer>
     <Shop></Shop>
-    <div id="sitemap">
-      <div class="container"></div>
-    </div>
+    <Sitemap></Sitemap>
     <div id="socials">
       <div class="container"></div>
     </div>
@@ -12,9 +10,10 @@
 
 <script>
 import Shop from "./Footer/Shop.vue";
+import Sitemap from "./Footer/Sitemap.vue";
 export default {
   name: `FooterComponent`,
-  components: { Shop }
+  components: { Shop, Sitemap }
 }
 </script>
 

@@ -1,6 +1,5 @@
 <template>
   <header>
-    <!-- LOGO SX ------- NAVBAR DX -->
     <div class="container">
       <div class="logo">
         <img src="../assets/img/dc-logo.png" alt="Logo" />
@@ -41,7 +40,6 @@ export default {
 
 header {
   background-color: #fff;
-  border-bottom: 1px solid #ebebeb;
   box-sizing: content-box;
   height: 115px;
   overflow: visible;

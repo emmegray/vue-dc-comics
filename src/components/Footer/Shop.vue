@@ -53,6 +53,7 @@ export default {
     span {
       color: white;
       font-variant: small-caps;
+      margin-right: 20px;
     }    
   }
   ul {
