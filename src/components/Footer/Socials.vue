@@ -2,12 +2,14 @@
   <div id="social">
     <div class="container">
       <a href="#"><button class="btn">SING-UP NOW!</button></a>
-      <h2>Follow us</h2>
-      <li v-for="socialIcons in socialIcons" :key="socialIcons.label">
-        <a :href="socialIcons.url">
-          <img :src="`/img/${socialIcons.src}`"/>
-          </a>
-      </li>      
+      <div class="social-icons">
+        <h2>Follow us</h2>
+        <li v-for="socialIcons in socialIcons" :key="socialIcons.label">
+          <a :href="socialIcons.url">
+            <img :src="`/img/${socialIcons.src}`"/>
+            </a>
+        </li>
+      </div>
     </div>
   </div>
 </template>
@@ -33,16 +35,22 @@ export default {
 #social {
   background-color: $bg-gray;
   text-transform: uppercase;
-  padding: 20px 0 20px;
+  padding: 20px;
   .container {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
   }
   button {
   background-color: transparent;
-  border-color: #0282F9;
   color: white;
+  justify-self: flex-start;
+  &:hover{
+    background: #0282F9;
+  }
+  }
+  .social-icons {
+  display: flex;
   }
   h2 {
   color: $primary-color;
