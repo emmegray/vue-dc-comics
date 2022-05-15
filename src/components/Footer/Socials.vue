@@ -7,8 +7,7 @@
         <a :href="socialIcons.url">
           <img :src="`/img/${socialIcons.src}`"/>
           </a>
-      </li>
-      
+      </li>      
     </div>
   </div>
 </template>
@@ -34,17 +33,19 @@ export default {
 #social {
   background-color: $bg-gray;
   text-transform: uppercase;
+  padding: 20px 0 20px;
   .container {
-  display: inline;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   }
   button {
   background-color: transparent;
   border-color: #0282F9;
   color: white;
   }
-  
   h2 {
-    color: $primary-color;
+  color: $primary-color;
   }
 }
 

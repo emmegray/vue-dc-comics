@@ -1,27 +1,41 @@
 <template>
   <div id="sitemap">
     <div class="container">
-      <ul>
-        <h2>dc comics</h2>
-        <li v-for="dcComics in dcComics" :key="dcComics.url">
-          <a :href="dcComics.url">{{dcComics.label}}</a>
-        </li>
-        <h2>shop</h2>
-        <li v-for="dcShop in dcShop" :key="dcShop.url">
-          <a :href="dcShop.url">{{dcShop.label}}</a>
-        </li>
-        <h2>dc</h2>
-        <li v-for="dC in dC" :key="dC.url">
-          <a :href="dC.url">{{dC.label}}</a>
-        </li>
+        <div>
+          <h2>dc comics</h2>
+          <ul>
+          <li v-for="dcComics in dcComics" :key="dcComics.url">
+            <a :href="dcComics.url">{{dcComics.label}}</a>
+          </li>
+          </ul>          
+        </div>
+
+        <div>
+          <ul>
+          <h2>shop</h2>
+          <li v-for="dcShop in dcShop" :key="dcShop.url">
+            <a :href="dcShop.url">{{dcShop.label}}</a>
+          </li>
+          </ul>
+        </div>
+
+        <div>
+          <ul>
+          <h2>dc</h2>
+          <li v-for="dC in dC" :key="dC.url">
+            <a :href="dC.url">{{dC.label}}</a>
+          </li>
+          </ul>
+        </div>
+
+        <div>
+          <ul>
             <h2>sites</h2>
-        <li v-for="sites in sites" :key="sites.url">
-          <a :href="sites.url">{{sites.label}}</a>
-        </li>
-      </ul>
-      <span>All Site Content TM and © 2020 DC Entertainment, unless otherwise noted here. All rights reserved.Cookies Settings
-        
-      </span>
+          <li v-for="sites in sites" :key="sites.url">
+            <a :href="sites.url">{{sites.label}}</a>
+          </li>
+          </ul>
+        </div>
     </div>
   </div>
 </template>
@@ -82,13 +96,16 @@ data:() => ({
     background-image: url(../../assets/img/dc-logo-bg.png);
     background-position: right center;
     background-repeat: no-repeat;
-    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
   h2 {
-  color: white;
-  font-variant: small-caps;
-  padding: 10px 0;
-  margin-top: 20px;
+    color: white;
+    font-variant: small-caps;
+    padding: 10px 0;
+    margin-top: 20px;
+    padding-right: 30px;
   }
   ul {
     padding-right: 30px;
@@ -101,4 +118,5 @@ data:() => ({
     }
   }
 }
+
 </style>
