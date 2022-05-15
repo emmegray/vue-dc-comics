@@ -2,13 +2,15 @@
   <div id="social">
     <div class="container">
       <a href="#"><button class="btn">SING-UP NOW!</button></a>
-      <div class="social-icons">
+      <div class="right">
         <h2>Follow us</h2>
-        <li v-for="socialIcons in socialIcons" :key="socialIcons.label">
-          <a :href="socialIcons.url">
-            <img :src="`/img/${socialIcons.src}`"/>
-            </a>
-        </li>
+        <ul>
+          <li v-for="socialIcons in socialIcons" :key="socialIcons.label">
+            <a :href="socialIcons.url">
+              <img :src="`/img/${socialIcons.src}`"/>
+              </a>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
@@ -37,23 +39,33 @@ export default {
   text-transform: uppercase;
   padding: 20px;
   .container {
-  display: flex;
-  flex-wrap: wrap;
-  box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
   button {
-  background-color: transparent;
-  color: white;
-  justify-self: flex-start;
-  &:hover{
-    background: #0282F9;
+    background-color: transparent;
+    color: white;
+    justify-self: flex-start;
+    &:hover{
+      background: #0282F9;
+    }
   }
-  }
-  .social-icons {
-  display: flex;
+  .right {
+    display: flex;
+    align-items: center;
   }
   h2 {
-  color: $primary-color;
+    color: $primary-color;
+    margin-right: 20px;
+  }
+  h2, ul {
+    justify-self: flex-end;
+    display: inline-block;
+  }
+  li {
+    display: inline-block;
+    margin-right: 10px;
   }
 }
 

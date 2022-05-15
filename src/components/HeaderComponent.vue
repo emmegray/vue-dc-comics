@@ -44,11 +44,9 @@ header {
   height: 115px;
   overflow: visible;
   width: 100%;
-
   .container {
     display: flex;
   }
-
   .logo {
     line-height: 115px;
     position: relative;
@@ -63,7 +61,6 @@ header {
     min-height: 115px;
     margin-left: auto;
     margin-right: auto;
-    width: 1080px;
   }
   ul {
     display: flex;
@@ -71,6 +68,7 @@ header {
     list-style: none;
     height: 100%;
     justify-content: end;
+    flex-wrap: wrap;
     li {
       margin-right: 20px;
       position: relative;

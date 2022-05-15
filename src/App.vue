@@ -17,7 +17,7 @@ export default {
     HeaderComponent,
     MainComponent,
     FooterComponent,
-}
+  }
 }
 </script>
 
@@ -25,5 +25,9 @@ export default {
 
 @import './assets/style/general';
 @import './assets/style/utilis';
+
+#app {
+  width: 100%;
+}
 
 </style>
