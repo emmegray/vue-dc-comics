@@ -67,7 +67,7 @@ header {
     align-items: center;
     list-style: none;
     height: 100%;
-    justify-content: end;
+    justify-content: flex-end;
     flex-wrap: wrap;
     li {
       margin-right: 20px;

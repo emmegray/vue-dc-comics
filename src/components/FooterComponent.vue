@@ -20,9 +20,6 @@ export default {
 @import "../assets/style/vars";
 
 footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
   width: 100%;
 }
 </style>
