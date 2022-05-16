@@ -26,7 +26,9 @@ main {
   img {
     overflow: hidden;
     width: 100%;
-    height: ato;
+    height: 300px;
+    object-fit:cover;
+    object-position: center 0px;
   }
 
   .container {

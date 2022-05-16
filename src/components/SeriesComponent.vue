@@ -21,7 +21,10 @@ export default {
     img {
       width: 100%;
       margin-bottom: 10px;
-    }
+      object-fit: cover;
+      aspect-ratio: 1/1;
+      object-position: center 0px;
+}
     .title {
       text-transform: uppercase;
       font-variant: small-caps;
