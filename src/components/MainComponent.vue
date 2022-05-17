@@ -5,6 +5,7 @@
         <div class="jumbotron">
           <h2>Current series</h2>
           <slot></slot>
+          <h4>Load more</h4>
         </div>
       </div>
   </main>
@@ -29,6 +30,7 @@ main {
     height: 600px;
     object-fit:cover;
     object-position: center 0px;
+    cursor: pointer;
   }
 
   .container {
@@ -45,6 +47,15 @@ main {
         background: $primary-color;
         padding: 10px 20px;
         text-transform: uppercase;
+        cursor: pointer;
+      }
+
+      h4{
+        text-align: center;
+        background: $primary-color;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        cursor: pointer;
       }
     }
   }

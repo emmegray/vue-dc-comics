@@ -24,11 +24,13 @@ export default {
       object-fit: cover;
       aspect-ratio: 1/1;
       object-position: center 0px;
+      cursor: pointer;
 }
     .title {
       text-transform: uppercase;
       font-variant: small-caps;
       color: lightgrey;
+      cursor: pointer;
     }
   }
 </style>
